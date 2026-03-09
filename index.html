@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja Online</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <div class="logo">Sua Logo Aqui</div>
+  <nav>
+    <button id="loginBtn">Entrar</button>
+    <button id="logoutBtn" class="hidden">Sair</button>
+    <button id="cadastrarBtn">Cadastrar</button>
+    <button id="cartBtn">Carrinho (<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<aside class="sidebar">
+  <ul>
+    <li><a href="#" data-category="moda">Moda</a></li>
+    <li><a href="#" data-category="perfumaria">Perfumaria</a></li>
+  </ul>
+</aside>
+
+<main id="productContainer">
+  <!-- Produtos serão adicionados via JS -->
+</main>
+
+<div id="cartModal" class="modal hidden">
+  <h2>Carrinho</h2>
+  <ul id="cartList"></ul>
+  <button id="checkoutBtn">Finalizar Compra</button>
+  <button id="closeCartBtn">Fechar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
