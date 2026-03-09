@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard ADM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+  <div class="logo">Sua Logo Aqui</div>
+  <nav>
+    <button id="logoutADMBtn">Sair</button>
+  </nav>
+</header>
+
+<main class="dashboard">
+  <section>
+    <h2>Adicionar Produto</h2>
+    <form id="addProductForm">
+      <input type="text" placeholder="Nome do Produto" name="name" required>
+      <input type="number" placeholder="Preço" name="price" required step="0.01">
+      <input type="number" placeholder="Quantidade" name="quantity" required>
+      <input type="text" placeholder="URL da Imagem" name="image" required>
+      <button type="submit">Adicionar Produto</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Estoque Atual</h2>
+    <ul id="productList"></ul>
+  </section>
+
+  <section>
+    <h2>Vendas (Mock)</h2>
+    <ul id="salesList"></ul>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+                                               </html>
