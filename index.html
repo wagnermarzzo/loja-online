@@ -5,24 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Loja Online</title>
 <link rel="stylesheet" href="style.css">
+<!-- Font Awesome para ícones -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <header>
   <div class="logo">Sua Logo Aqui</div>
   <nav>
-    <button id="loginBtn">Entrar</button>
-    <button id="logoutBtn" class="hidden">Sair</button>
-    <button id="cadastrarBtn">Cadastrar</button>
-    <button id="cartBtn">Carrinho (<span id="cartCount">0</span>)</button>
-    <button id="myOrdersBtn" class="hidden">Minhas Compras</button>
+    <button id="loginBtn" title="Entrar"><i class="fas fa-key"></i></button>
+    <button id="cadastrarBtn" title="Cadastrar"><i class="fas fa-user-plus"></i></button>
+    <button id="cartBtn" title="Carrinho"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></button>
+    <button id="myOrdersBtn" title="Minhas Compras" class="hidden"><i class="fas fa-box"></i></button>
   </nav>
 </header>
 
 <aside class="sidebar">
   <ul>
-    <li><a href="#" data-category="moda">Moda</a></li>
-    <li><a href="#" data-category="perfumaria">Perfumaria</a></li>
+    <li><a href="#" data-category="moda"><i class="fas fa-tshirt"></i> Moda</a></li>
+    <li><a href="#" data-category="perfumaria"><i class="fas fa-spray-can"></i> Perfumaria</a></li>
   </ul>
 </aside>
 
@@ -33,10 +34,10 @@
 <div id="cartModal" class="modal hidden">
   <h2>Carrinho</h2>
   <ul id="cartList"></ul>
-  <button id="checkoutBtn">Finalizar Compra</button>
-  <button id="closeCartBtn">Fechar</button>
+  <button id="checkoutBtn"><i class="fas fa-check"></i> Finalizar Compra</button>
+  <button id="closeCartBtn"><i class="fas fa-times"></i> Fechar</button>
 </div>
 
 <script src="script.js"></script>
 </body>
-</html>
+  </html>
